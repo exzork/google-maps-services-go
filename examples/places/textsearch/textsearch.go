@@ -23,8 +23,8 @@ import (
 	"log"
 	"os"
 
+	"github.com/exzork/google-maps-services-go"
 	"github.com/kr/pretty"
-	"googlemaps.github.io/maps"
 )
 
 var (

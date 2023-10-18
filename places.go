@@ -861,6 +861,8 @@ type PlaceAutocompleteRequest struct {
 	Radius uint
 	// Language is the language in which to return results.
 	Language string
+	// Region is the region code, specified as a ccTLD (country code top-level domain)
+	Region string
 	// Type restricts the results to places matching the specified type.
 	Types AutocompletePlaceType
 	// Components is a grouping of places to which you would like to restrict your

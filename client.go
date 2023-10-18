@@ -26,9 +26,9 @@ import (
 	"net/url"
 	"strings"
 
+	"github.com/exzork/google-maps-services-go/internal"
+	"github.com/exzork/google-maps-services-go/metrics"
 	"golang.org/x/time/rate"
-	"googlemaps.github.io/maps/internal"
-	"googlemaps.github.io/maps/metrics"
 )
 
 // Client may be used to make requests to the Google Maps WebService APIs
@@ -51,6 +51,7 @@ type ClientOption func(*Client) error
 var defaultRequestsPerSecond = 50
 
 type contextKey string
+
 func (c contextKey) String() string {
 	return "maps " + string(c)
 }
